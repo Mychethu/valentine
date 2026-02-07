@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<div class="card" id="firstPage">
+    <h1>Will you be my Valentine? 💖</h1>
+    <img src="image1.png" alt="Valentine Image" class="background">
+
+    <div class="buttons">
+        <button class="yes" onclick="yesClicked()">Yes 💕</button>
+        <button class="no" onmouseover="moveNo()">No 😝</button>
+    </div>
+</div>
+
+    
+<div class="hearts">
+    <span>❤️</span><span>💖</span><span>💕</span><span>💘</span><span>❤️</span><span>💖</span><span>💕</span><span>💘</span><span>💖</span>
+    <span>💕</span><span>💗</span><span>💓</span><span>💘</span><span>💝</span><span>🩷</span><span>❤️</span><span>💖</span>
+    <span>💕</span><span>💘</span><span>❤️</span><span>💖</span><span>💕</span><span>💘</span><span>💖</span><span>💕</span><span>💗</span>
+    <span>💓</span><span>💘</span><span>💝</span><span>🩷</span>
+    
+   
+</div>
+
+<div class="card success hidden" id="successPage">
+    
+    <h2>I knew you’d say YES 😍</h2>
+<img src="gif 3.gif" class="success-img">
+
+    <p class="meassage">
+        You don’t even realize how special you are to me ❤️<br><br>
+        My world feels warmer, brighter, and happier because of you 💖
+    </p>
+
+    <button class="next" onclick="nextClicked()">Next 💞</button>
+</div>
+
+<div class="card reasons-card hidden" id="reasonsPage" onclick="createHeartAnimation(event)">
+    <h2 class="reasons-title">Reasons Why I Love You 💖</h2>
+    
+    <div class="reasons-list">
+        <div class="reason-item">
+            <span class="reason-emoji">❤️</span>
+            <span class="reason-text">You make me smile without even trying</span>
+        </div>
+        <div class="reason-item">
+            <span class="reason-emoji">👑</span>
+            <span class="reason-text">Your kindness makes the world feel softer</span>
+        </div>
+        <div class="reason-item">
+            <span class="reason-emoji">🤍</span>
+            <span class="reason-text"> You accept me exactly as I am</span>
+        </div>
+        <div class="reason-item">
+            <span class="reason-emoji">🍫</span>
+            <span class="reason-text">Because you’re sweeter than Dairy Milk</span>
+        </div>
+        <div class="reason-item">
+            <span class="reason-emoji">✨</span>
+            <span class="reason-text">Because my heart knows you’re the one</span>
+        </div>
+    </div>
+
+    <div class="button-group">
+        <button class="hug-btn" onclick="nextToPromise()">One Hug? 🤗</button>
+        <button class="surprise-btn" onclick="showSurprise(event)">Surprise!</button>
+    </div>
+
+    <div class="surprise-message hidden">
+        <p>You are the best thing that ever happened to me! Every moment with you is precious and I want to spend forever making you smile. I love you more than words can express! 💕✨</p>
+    </div>
+</div>
+
+<div class="card promise-card hidden" id="promisePage">
+    <h2 class="promise-title">My Valentine Promise 💝</h2>
+    
+    <div class="promise-image">
+        <img src="r1.png" alt="Promise Image">
+    </div>
+
+    <p class="promise-text">
+        I promise to care for you,<br>
+        to make you smile even on hard days,<br>
+        and to love you more with every heartbeat ❤️
+    </p>
+
+    <button class="final-surprise-btn" onclick="showFinalSurprise()">Final Surprise 🎁</button>
+</div>
+
+<div class="card final-surprise hidden" id="finalSurprisePage">
+    <h2 class="final-title">Happy Valentine's Day 💕</h2>
+    
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img class="carousel-img" src="gif 9.jpg" alt="Couple 1">
+                </div>
+                <div class="carousel-item active">
+                    <img class="carousel-img" src="gif 8.png" alt="Couple 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="gif 7.gif" alt="Couple 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="gif 6.gif" alt="Couple 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="gif 5.gif" alt="Couple 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="gif 4.gif" alt="Couple 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="gif 1.jpg" alt="Couple 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="r1.png" alt="Couple 3">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn carousel-btn-prev" onclick="prevImage()">❮</button>
+        <button class="carousel-btn carousel-btn-next" onclick="nextImage()">❯</button>
+    </div>
+
+    <p class="final-message">
+        Be mine today, tomorrow and always 💖<br>
+        💕 I Love You 💕
+    </p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
