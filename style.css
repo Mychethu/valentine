@@ -10,6 +10,7 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     position: relative;
+    background-attachment: scroll; 
 }
 
 
